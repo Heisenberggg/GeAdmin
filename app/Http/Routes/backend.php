@@ -8,6 +8,17 @@ Route::get('/index',[
     'uses' => 'IndexController@index'
 ]);
 
+/*文章管理*/
+Route::resource("article", 'ArticleController');
+Route::post('article/uploadImg', [
+    'as' => 'backend.article.uploadImg',
+    'uses' => 'ArticleController@uploadImg',
+]);
+Route::post('article/uploadFile', [
+    'as' => 'backend.article.uploadFile',
+    'uses' => 'ArticleController@uploadFile',
+]);
+
 /* 留言面板 */
 Route::get('index/messages', [
     'as' => 'backend.index.message',
