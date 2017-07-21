@@ -154,6 +154,7 @@ return [
         Zizaco\Entrust\EntrustServiceProvider::class,
         Orangehill\Iseed\IseedServiceProvider::class,
         GrahamCampbell\Exceptions\ExceptionsServiceProvider::class,
+        itbdw\QiniuStorage\QiniuFilesystemServiceProvider::class,
     ],
 
     /*

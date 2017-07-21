@@ -80,6 +80,14 @@ return [
             'url_type'  => 'publicURL',
         ],
 
+        'qiniu' => [
+            'driver'    => 'qiniu',
+            'domain'    => 'otf2rjp4n.bkt.clouddn.com',  //你的七牛域名
+            'access_key'=> 'WBOegPM512HYLpDjNOVPfP9Bxe1kf1l_uGn9hsHO',    //AccessKey
+            'secret_key'=> 's7psK8cUnX6Hhb70lwwpfTAVdPmp3nak7_0tBGbV',   //SecretKey
+            'bucket'    => 'gechongyuan',    //Bucket名字
+        ],
+
     ],
 
 ];

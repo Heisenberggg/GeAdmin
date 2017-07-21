@@ -19,6 +19,9 @@ Route::post('article/uploadFile', [
     'uses' => 'ArticleController@uploadFile',
 ]);
 
+/*测试图片上传七牛云*/
+Route::resource("test", 'TestController');
+
 /* 留言面板 */
 Route::get('index/messages', [
     'as' => 'backend.index.message',
